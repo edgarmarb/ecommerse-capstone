@@ -14,27 +14,28 @@
                     <img src="assets/images/lentesIcon.PNG" width="30" height="30" class="d-inline-block align-top" alt="">
                     Optica Florencia
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>                
-                <ul class="nav navbar-nav ms-auto" id="navbarCollapse">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="allpies.html">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Sign In</a>
-                    </li>                       
-                </ul>
+                </button>   
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">           
+                    <ul class="nav navbar-nav ms-auto" id="navbarCollapse">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Sign In</a>
+                        </li>   
+                    </ul>
+                </div>
             </div>
         </nav>
-    </header> 
+    </header>
     
     <main role="main">
 
@@ -78,7 +79,10 @@
                     <img width="175" height="175" src="assets/images/products/lente2.png">
                     <h2>Peach</h2>
                     <p>They are distinguished by their lightness</p>
-                    <p><a class="btn btn-primary" href="applepie.html" role="button">Add to Cart</a></p>
+                    <p><a class="btn btn-primary" href="applepie.html" role="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                          </svg> Add to Cart</a></p>
                 </div>
             </div>
 
@@ -103,7 +107,79 @@
                 </div>
             </div>            
         </div>
+
+        <br/>
+
+        <div class="container table-responsive">
+            <h3>Materials for glasses</h3>
+            <table class="table table-hover table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">Material</th>
+                    <th scope="col">Refractive index</th>
+                    <th scope="col">Features and Benefits</th>                    
+                </tr>
+                </thead>
+                <tr>
+                    <th scope="row">High index plastic</th>
+                    <td>1.70 to 1.74</td>
+                    <td>The finest crystals offered.
+                        Blocks 100% of UV rays.
+                        Light.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Tribid</th>
+                    <td>1.60</td>
+                    <td>Thin and light.
+                        <p> Substantially more impact resistant than CR-39 and high-index 
+                        plastic lenses (except polycarbonate and Trivex).
+                        Abbe value higher than polycarbonate.
+                        Disadvantage: Not yet available in a wide variety of crystal designs.
+                    </p></td>
+                </tr>
+                <tr>
+                    <th scope="row">Polycarbonate</th>
+                    <td >1,586</td>
+                    <td>Superior impact resistance.
+                        Blocks 100% of UV rays.
+                        Lighter than high index plastic crystals.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Trivex</th>
+                    <td >1.54</td>
+                    <td>Superior impact resistance.
+                        Blocks 100% of UV rays.
+                        Lighter than high index plastic crystals.</td>
+                </tr>                    
+                <tr>
+                    <th scope="row">CR-39 plastic</th>
+                    <td >1,498</td>
+                    <td>Excellent optics.
+                        Low cost.
+                        Disadvantage: thickness.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Crown glass</th>
+                    <td >1,523</td>
+                    <td>Excellent optics.
+                        Low cost.
+                        Disadvantages: heavy, brittle.</td>
+                </tr>
+                </tbody>
+            </table> 
+        </div>               
     </main>
+    <footer class="bg-dark text-center text-white">
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2021 Copyright:
+          <a class="text-reset fw-bold" href="#">opticaflorencia.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>
